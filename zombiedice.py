@@ -18,9 +18,6 @@ for i in range(numJogadores):
     listaJogadores.append(nome)
 
 
-print(listaJogadores)
-
-
 dadoVerde = "CPCTPC"
 dadoAmarelo = "TPCTPC"
 dadoVermelho = "TPTCPT"
@@ -45,7 +42,6 @@ while (i < 3):
     i = i + 1
     numSorteado = randint(0, 12)
     dadoSorteado = listaDados[numSorteado]
-    print(numSorteado)
 
     if(numSorteado <= 5):
         corDado = 'VERDE'
@@ -55,4 +51,7 @@ while (i < 3):
         corDado = 'VERMELHO'
     
     print('Dado sorteado: ',corDado)
+
+    numSorteado = dadoSorteado
+    
     
