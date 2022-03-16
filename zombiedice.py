@@ -1,4 +1,5 @@
 from random import randint
+import random
 
 
 print('ZOMBIE DICE!')
@@ -25,9 +26,11 @@ dadoVerde = "CPCTPC"
 dadoAmarelo = "TPCTPC"
 dadoVermelho = "TPTCPT"
 
-listaDados = [dadoVerde,dadoVerde,dadoVerde,dadoVerde,dadoVerde,dadoVerde,
-    dadoAmarelo,dadoAmarelo,dadoAmarelo,dadoAmarelo,
-    dadoVermelho,dadoVermelho,dadoVermelho]
+listaDados = [
+                dadoVerde,dadoVerde,dadoVerde,dadoVerde,dadoVerde,dadoVerde,
+                dadoAmarelo,dadoAmarelo,dadoAmarelo,dadoAmarelo,
+                dadoVermelho,dadoVermelho,dadoVermelho
+]
 
 print('INICIANDO O JOGO...')
 
@@ -37,10 +40,19 @@ tiros = 0
 cerebros = 0
 passos = 0
 
-while True: 
-    print('É a vez de',listaJogadores[jogadorAtual] + '...')
-    break
 i = 0
-while (i < 2): 
-    numSorteado = randint(0, 12)
+while (i < 3): 
+    print('É a vez de',listaJogadores[jogadorAtual] + '...')
+    i = i + 1
+    numSorteado = (random.randint(0, 12))
     dadoSorteado = listaDados[numSorteado]
+
+    if(dadoSorteado = 'CPCTPC')
+        corDado = 'VERDE'
+        if(dadoSorteado = 'TPCTPC')
+            corDado = 'AMARELO'
+            else 
+                corDado = 'VERMELHO'
+    print('Dado sorteado: ',corDado)
+
+    dadosSorteados[i] = dadoSorteado
