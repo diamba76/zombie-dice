@@ -1,5 +1,4 @@
 from random import randint
-import random
 
 
 print('ZOMBIE DICE!')
@@ -44,15 +43,16 @@ i = 0
 while (i < 3): 
     print('É a vez de',listaJogadores[jogadorAtual] + '...')
     i = i + 1
-    numSorteado = (random.randint(0, 12))
+    numSorteado = randint(0, 12)
     dadoSorteado = listaDados[numSorteado]
+    print(numSorteado)
 
-    if(dadoSorteado = 'CPCTPC')
+    if(numSorteado <= 5):
         corDado = 'VERDE'
-        if(dadoSorteado = 'TPCTPC')
+    elif(numSorteado > 5) and (numSorteado <= 9):
             corDado = 'AMARELO'
-            else 
-                corDado = 'VERMELHO'
+    else:
+        corDado = 'VERMELHO'
+    
     print('Dado sorteado: ',corDado)
-
-    dadosSorteados[i] = dadoSorteado
+    
